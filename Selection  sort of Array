@@ -1,0 +1,43 @@
+import java.util.*;
+//Selection  sort of Array
+public class Sorting {
+    void selectionSort(int[] arr)
+    {
+
+        for(int i=0;i<arr.length-1;i++)
+        {
+            int min_index=i;
+            for(int j=i+1;j<arr.length;j++)
+            {
+                if(arr[j]<arr[min_index])
+                {
+                    int temp=arr[j];
+                    arr[j]=arr[min_index];
+                    arr[min_index]=temp;
+                }
+            }
+        }
+
+    }
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the no of element of array: ");
+        int n=sc.nextInt();
+        int[] arr = new int[n];
+        System.out.println("enter the elements: ");
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        Sorting obj=new Sorting();
+        obj.selectionSort(arr);
+        System.out.println("Array after sorting: ");
+        for(int i=0;i<n;i++)
+        {
+            System.out.print(arr[i]+" ");
+        }
+
+    }
+
+}
