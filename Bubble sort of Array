@@ -39,3 +39,4 @@ public class Sorting {
     }
 
 }
+Bubble sort is stable and in-place algorithm.
