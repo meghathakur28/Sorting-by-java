@@ -41,3 +41,5 @@ public class Sorting {
     }
 
 }
+Selection is not stable.
+Selection sort is in place algorithm.
